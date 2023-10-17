@@ -43,21 +43,21 @@ Vamos a responder las siguientes preguntas:
 1. Escribe una función find() para mostrar todos los documentos de la colección de restaurantes.
 
 #+begin_src js
-
+db.restaurants.find()
 #+end_src
 
 
 2. Escribe una función find() para mostrar los campos restaurant_id, nombre, municipio y cocina para todos los documentos en el restaurante de la colección.
 
 #+begin_src js
-
+db.restaurants.find({},{address:0, grades:0})
 #+end_src
 
 
 3. Escribe una función find() para mostrar los campos restaurant_id, nombre, municipio y cocina, pero excluya el campo \_id para todos los documentos de la colección restaurant.
 
 #+begin_src js
-
+db.restaurants.find({},{address:0, grades:0,_id:0})
 #+end_src
 
 
